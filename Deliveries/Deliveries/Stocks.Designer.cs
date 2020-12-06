@@ -46,9 +46,10 @@ namespace Deliveries
             // 
             this.stockNameLabel.AutoSize = true;
             this.stockNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockNameLabel.Location = new System.Drawing.Point(127, 53);
+            this.stockNameLabel.Location = new System.Drawing.Point(95, 43);
+            this.stockNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.stockNameLabel.Name = "stockNameLabel";
-            this.stockNameLabel.Size = new System.Drawing.Size(195, 29);
+            this.stockNameLabel.Size = new System.Drawing.Size(149, 24);
             this.stockNameLabel.TabIndex = 0;
             this.stockNameLabel.Text = "Наименование:";
             // 
@@ -56,9 +57,10 @@ namespace Deliveries
             // 
             this.stockDateLabel.AutoSize = true;
             this.stockDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockDateLabel.Location = new System.Drawing.Point(80, 113);
+            this.stockDateLabel.Location = new System.Drawing.Point(60, 92);
+            this.stockDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.stockDateLabel.Name = "stockDateLabel";
-            this.stockDateLabel.Size = new System.Drawing.Size(242, 29);
+            this.stockDateLabel.Size = new System.Drawing.Size(194, 24);
             this.stockDateLabel.TabIndex = 1;
             this.stockDateLabel.Text = "Дата производство:";
             // 
@@ -66,9 +68,10 @@ namespace Deliveries
             // 
             this.stockDurabilityLabel.AutoSize = true;
             this.stockDurabilityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockDurabilityLabel.Location = new System.Drawing.Point(192, 179);
+            this.stockDurabilityLabel.Location = new System.Drawing.Point(144, 145);
+            this.stockDurabilityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.stockDurabilityLabel.Name = "stockDurabilityLabel";
-            this.stockDurabilityLabel.Size = new System.Drawing.Size(130, 29);
+            this.stockDurabilityLabel.Size = new System.Drawing.Size(101, 24);
             this.stockDurabilityLabel.TabIndex = 2;
             this.stockDurabilityLabel.Text = "Трайност:";
             // 
@@ -76,9 +79,10 @@ namespace Deliveries
             // 
             this.stockPriceLabel.AutoSize = true;
             this.stockPriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockPriceLabel.Location = new System.Drawing.Point(244, 236);
+            this.stockPriceLabel.Location = new System.Drawing.Point(183, 192);
+            this.stockPriceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.stockPriceLabel.Name = "stockPriceLabel";
-            this.stockPriceLabel.Size = new System.Drawing.Size(78, 29);
+            this.stockPriceLabel.Size = new System.Drawing.Size(59, 24);
             this.stockPriceLabel.TabIndex = 3;
             this.stockPriceLabel.Text = "Цена:";
             // 
@@ -86,58 +90,65 @@ namespace Deliveries
             // 
             this.stockMeasureLabel.AutoSize = true;
             this.stockMeasureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockMeasureLabel.Location = new System.Drawing.Point(89, 283);
+            this.stockMeasureLabel.Location = new System.Drawing.Point(67, 230);
+            this.stockMeasureLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.stockMeasureLabel.Name = "stockMeasureLabel";
-            this.stockMeasureLabel.Size = new System.Drawing.Size(233, 29);
+            this.stockMeasureLabel.Size = new System.Drawing.Size(180, 24);
             this.stockMeasureLabel.TabIndex = 4;
             this.stockMeasureLabel.Text = "Мярка количество:";
             // 
             // stockNameField
             // 
             this.stockNameField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockNameField.Location = new System.Drawing.Point(340, 53);
+            this.stockNameField.Location = new System.Drawing.Point(255, 43);
+            this.stockNameField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stockNameField.Name = "stockNameField";
-            this.stockNameField.Size = new System.Drawing.Size(219, 34);
+            this.stockNameField.Size = new System.Drawing.Size(165, 29);
             this.stockNameField.TabIndex = 5;
             // 
             // stockDurabilityField
             // 
             this.stockDurabilityField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockDurabilityField.Location = new System.Drawing.Point(340, 176);
+            this.stockDurabilityField.Location = new System.Drawing.Point(255, 143);
+            this.stockDurabilityField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stockDurabilityField.Name = "stockDurabilityField";
-            this.stockDurabilityField.Size = new System.Drawing.Size(100, 34);
+            this.stockDurabilityField.Size = new System.Drawing.Size(76, 29);
             this.stockDurabilityField.TabIndex = 7;
             // 
             // stockPriceField
             // 
             this.stockPriceField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockPriceField.Location = new System.Drawing.Point(340, 233);
+            this.stockPriceField.Location = new System.Drawing.Point(255, 189);
+            this.stockPriceField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stockPriceField.Name = "stockPriceField";
-            this.stockPriceField.Size = new System.Drawing.Size(100, 34);
+            this.stockPriceField.Size = new System.Drawing.Size(76, 29);
             this.stockPriceField.TabIndex = 8;
             // 
             // stockMeasureField
             // 
             this.stockMeasureField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockMeasureField.Location = new System.Drawing.Point(340, 283);
+            this.stockMeasureField.Location = new System.Drawing.Point(255, 230);
+            this.stockMeasureField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stockMeasureField.Name = "stockMeasureField";
-            this.stockMeasureField.Size = new System.Drawing.Size(100, 34);
+            this.stockMeasureField.Size = new System.Drawing.Size(76, 29);
             this.stockMeasureField.TabIndex = 9;
             // 
             // stockDatePicker
             // 
             this.stockDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockDatePicker.Location = new System.Drawing.Point(340, 113);
+            this.stockDatePicker.Location = new System.Drawing.Point(255, 92);
+            this.stockDatePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stockDatePicker.Name = "stockDatePicker";
-            this.stockDatePicker.Size = new System.Drawing.Size(436, 34);
+            this.stockDatePicker.Size = new System.Drawing.Size(328, 29);
             this.stockDatePicker.TabIndex = 10;
             // 
             // stockAddButton
             // 
             this.stockAddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockAddButton.Location = new System.Drawing.Point(246, 349);
+            this.stockAddButton.Location = new System.Drawing.Point(184, 284);
+            this.stockAddButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stockAddButton.Name = "stockAddButton";
-            this.stockAddButton.Size = new System.Drawing.Size(262, 49);
+            this.stockAddButton.Size = new System.Drawing.Size(196, 40);
             this.stockAddButton.TabIndex = 11;
             this.stockAddButton.Text = "Добави запис";
             this.stockAddButton.UseVisualStyleBackColor = true;
@@ -145,9 +156,9 @@ namespace Deliveries
             // 
             // Stocks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 450);
+            this.ClientSize = new System.Drawing.Size(612, 366);
             this.Controls.Add(this.stockAddButton);
             this.Controls.Add(this.stockDatePicker);
             this.Controls.Add(this.stockMeasureField);
@@ -159,8 +170,10 @@ namespace Deliveries
             this.Controls.Add(this.stockDurabilityLabel);
             this.Controls.Add(this.stockDateLabel);
             this.Controls.Add(this.stockNameLabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Stocks";
             this.Text = "frmStoki";
+            this.Load += new System.EventHandler(this.Stocks_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

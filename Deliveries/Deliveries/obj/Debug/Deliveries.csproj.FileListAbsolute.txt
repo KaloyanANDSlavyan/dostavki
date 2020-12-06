@@ -12,3 +12,19 @@ C:\Users\MKN\Desktop\C#\Our Project\Deliveries\Deliveries\Deliveries\bin\Debug\D
 C:\Users\MKN\Desktop\C#\Our Project\Deliveries\Deliveries\Deliveries\obj\Debug\Deliveries.MainForm.resources
 C:\Users\MKN\Desktop\C#\Our Project\Deliveries\Deliveries\Deliveries\obj\Debug\Deliveries.Forms.resources
 C:\Users\MKN\Desktop\C#\Our Project\Deliveries\Deliveries\Deliveries\obj\Debug\Deliveries.Stocks.resources
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\bin\Debug\Database1.mdf
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\bin\Debug\Database1_log.ldf
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\bin\Debug\Deliveries.exe.config
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\bin\Debug\Deliveries.exe
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\bin\Debug\Deliveries.pdb
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.csprojAssemblyReference.cache
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.Delivors.resources
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.Forms.resources
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.Stocks.resources
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.MainForm.resources
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.Properties.Resources.resources
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.csproj.GenerateResource.cache
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.csproj.CoreCompileInputs.cache
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.exe
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.pdb
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.Deliveries.resources

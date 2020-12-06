@@ -30,5 +30,10 @@ namespace Deliveries
             
             dbAccess.insertStock(stock);
         }
+
+        private void Stocks_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

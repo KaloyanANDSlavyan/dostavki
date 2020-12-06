@@ -21,5 +21,17 @@ namespace Deliveries
             Stocks stocks = new Stocks();
             stocks.Show();
         }
+
+        private void delivorButtonAction(object sender, EventArgs e)
+        {
+            Delivors delivors = new Delivors();
+            delivors.Show();
+        }
+
+        private void deliveryButtonAction(object sender, EventArgs e)
+        {
+            Deliveries deliveries = new Deliveries();
+            deliveries.Show();
+        }
     }
 }
