@@ -25,5 +25,10 @@ namespace Deliveries
             Forms forms = new Forms();
             forms.Show();
         }
+
+        public void reportsMenuButtonAction(object sender, EventArgs e) {
+            Reports reports = new Reports();
+            reports.Show();
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace Deliveries
 {
     class DatabaseAccess
     {
-        private String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\Database1.mdf;Integrated Security=True";
+        private String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\MKN\Desktop\C#\clones\clone 3\dostavki\Deliveries\Deliveries\Database1.mdf;Integrated Security=True";
         private SqlConnection connection;
         private SqlCommand command;
 
@@ -80,10 +80,39 @@ namespace Deliveries
         }
         public object outputDelivor(int id)
         {
-            String query = @"SELECT Deliveries.delivorID, Deliveries.stockID, Stocks.stockName, 
-            Stocks.price * 1.2 AS price, CONCAT(Deliveries.deliveryAmount, ' ', Stocks.measure)
-            AS amount FROM((Deliveries INNER JOIN Delivors ON Deliveries.delivorID = Delivors.delivorID)
+            String query = @"SELECT Deliveries.delivorID as код_доставчик, Deliveries.stockID as код_стока, Stocks.stockName as име_стока, 
+            Stocks.price * 1.2 AS цена_стока, CONCAT(Deliveries.deliveryAmount, ' ', Stocks.measure)
+            AS количество FROM((Deliveries INNER JOIN Delivors ON Deliveries.delivorID = Delivors.delivorID)
             INNER JOIN Stocks ON Deliveries.stockID = Stocks.stockID) WHERE Delivors.delivorID = " + id;
+
+            command = new SqlCommand(query, connection);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            dataAdapter.Fill(dt);
+            return dt;
+        }
+
+        public object outputStocks() {
+            String query = @"SELECT s.stockID as код, s.stockName as име, 
+                             s.date as дата, s.durability as трайност, 
+                             s.price as цена, s.measure as мярка
+                             FROM Stocks s";
+
+            command = new SqlCommand(query, connection);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            dataAdapter.Fill(dt);
+            return dt;
+        }
+
+        public object queryOlio(DateTime date) {
+            String query = @"SELECT s.stockName as име, s.price*1.2 as ценаДДС, 
+                            d.delivorID as код_доставчик, CONCAT(d.deliveryAmount, ' ', s.measure) as количество, 
+                            d.deliveryDate as дата_доставка
+                            FROM Deliveries d
+                            INNER JOIN Stocks s ON d.stockID = s.stockID
+                            WHERE s.stockName = 'olio' AND d.deliveryDate < " + "'" + date.ToString() + "'" +
+                           " ORDER BY d.deliveryAmount DESC";
 
             command = new SqlCommand(query, connection);
             SqlDataAdapter dataAdapter = new SqlDataAdapter(command);

@@ -77,6 +77,18 @@
     <Compile Include="Delivors.Designer.cs">
       <DependentUpon>Delivors.cs</DependentUpon>
     </Compile>
+    <Compile Include="OlioReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlioReport.Designer.cs">
+      <DependentUpon>OlioReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShowDeliveredStocks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
     </Compile>
     <Compile Include="Forms.Designer.cs">
       <DependentUpon>Forms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport.Designer.cs">
+      <DependentUpon>StockReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Stocks.cs">
       <SubType>Form</SubType>
@@ -113,8 +131,17 @@
     <EmbeddedResource Include="Forms.resx">
       <DependentUpon>Forms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OlioReport.resx">
+      <DependentUpon>OlioReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShowDeliveredStocks.resx">
       <DependentUpon>ShowDeliveredStocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport.resx">
+      <DependentUpon>StockReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stocks.resx">
       <DependentUpon>Stocks.cs</DependentUpon>

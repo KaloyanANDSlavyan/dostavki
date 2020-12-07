@@ -42,10 +42,9 @@ namespace Deliveries
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 153);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(77, 188);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(518, 32);
+            this.label1.Size = new System.Drawing.Size(636, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Информационна система за доставки";
             // 
@@ -56,8 +55,8 @@ namespace Deliveries
             this.менюToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(600, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,38 +67,39 @@ namespace Deliveries
             this.справкиToolStripMenuItem,
             this.изходToolStripMenuItem});
             this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
-            this.менюToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.менюToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.менюToolStripMenuItem.Text = "Меню";
             // 
             // въвежданеToolStripMenuItem
             // 
             this.въвежданеToolStripMenuItem.Name = "въвежданеToolStripMenuItem";
-            this.въвежданеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.въвежданеToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.въвежданеToolStripMenuItem.Text = "Въвеждане";
             this.въвежданеToolStripMenuItem.Click += new System.EventHandler(this.insertMenuButtonAction);
             // 
             // справкиToolStripMenuItem
             // 
             this.справкиToolStripMenuItem.Name = "справкиToolStripMenuItem";
-            this.справкиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.справкиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.справкиToolStripMenuItem.Text = "Справки";
+            this.справкиToolStripMenuItem.Click += new System.EventHandler(this.reportsMenuButtonAction);
             // 
             // изходToolStripMenuItem
             // 
             this.изходToolStripMenuItem.Name = "изходToolStripMenuItem";
-            this.изходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.изходToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.изходToolStripMenuItem.Text = "Изход";
             this.изходToolStripMenuItem.Click += new System.EventHandler(this.exitMenuButtonAction);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.menuStrip1.ResumeLayout(false);
