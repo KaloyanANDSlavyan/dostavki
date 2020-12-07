@@ -38,13 +38,14 @@ namespace Deliveries
             this.addressLabel = new System.Windows.Forms.Label();
             this.employeeField = new System.Windows.Forms.TextBox();
             this.employeeLabel = new System.Windows.Forms.Label();
+            this.outStocksForDelivorButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // companyNameLabel
             // 
             this.companyNameLabel.AutoSize = true;
             this.companyNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.companyNameLabel.Location = new System.Drawing.Point(134, 34);
+            this.companyNameLabel.Location = new System.Drawing.Point(93, 28);
             this.companyNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.companyNameLabel.Name = "companyNameLabel";
             this.companyNameLabel.Size = new System.Drawing.Size(142, 24);
@@ -54,7 +55,7 @@ namespace Deliveries
             // companyNameField
             // 
             this.companyNameField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.companyNameField.Location = new System.Drawing.Point(287, 34);
+            this.companyNameField.Location = new System.Drawing.Point(246, 28);
             this.companyNameField.Margin = new System.Windows.Forms.Padding(2);
             this.companyNameField.Name = "companyNameField";
             this.companyNameField.Size = new System.Drawing.Size(165, 29);
@@ -63,7 +64,7 @@ namespace Deliveries
             // delivorAddButton
             // 
             this.delivorAddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delivorAddButton.Location = new System.Drawing.Point(201, 302);
+            this.delivorAddButton.Location = new System.Drawing.Point(215, 278);
             this.delivorAddButton.Margin = new System.Windows.Forms.Padding(2);
             this.delivorAddButton.Name = "delivorAddButton";
             this.delivorAddButton.Size = new System.Drawing.Size(196, 40);
@@ -75,7 +76,7 @@ namespace Deliveries
             // phoneField
             // 
             this.phoneField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneField.Location = new System.Drawing.Point(287, 164);
+            this.phoneField.Location = new System.Drawing.Point(246, 158);
             this.phoneField.Margin = new System.Windows.Forms.Padding(2);
             this.phoneField.Name = "phoneField";
             this.phoneField.Size = new System.Drawing.Size(165, 29);
@@ -85,7 +86,7 @@ namespace Deliveries
             // 
             this.phoneLabel.AutoSize = true;
             this.phoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneLabel.Location = new System.Drawing.Point(97, 164);
+            this.phoneLabel.Location = new System.Drawing.Point(56, 158);
             this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.phoneLabel.Name = "phoneLabel";
             this.phoneLabel.Size = new System.Drawing.Size(179, 24);
@@ -95,7 +96,7 @@ namespace Deliveries
             // addressField
             // 
             this.addressField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressField.Location = new System.Drawing.Point(287, 98);
+            this.addressField.Location = new System.Drawing.Point(246, 92);
             this.addressField.Margin = new System.Windows.Forms.Padding(2);
             this.addressField.Name = "addressField";
             this.addressField.Size = new System.Drawing.Size(165, 29);
@@ -105,7 +106,7 @@ namespace Deliveries
             // 
             this.addressLabel.AutoSize = true;
             this.addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressLabel.Location = new System.Drawing.Point(197, 98);
+            this.addressLabel.Location = new System.Drawing.Point(156, 92);
             this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addressLabel.Name = "addressLabel";
             this.addressLabel.Size = new System.Drawing.Size(72, 24);
@@ -115,7 +116,7 @@ namespace Deliveries
             // employeeField
             // 
             this.employeeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeField.Location = new System.Drawing.Point(287, 222);
+            this.employeeField.Location = new System.Drawing.Point(246, 216);
             this.employeeField.Margin = new System.Windows.Forms.Padding(2);
             this.employeeField.Name = "employeeField";
             this.employeeField.Size = new System.Drawing.Size(165, 29);
@@ -125,18 +126,31 @@ namespace Deliveries
             // 
             this.employeeLabel.AutoSize = true;
             this.employeeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeLabel.Location = new System.Drawing.Point(116, 222);
+            this.employeeLabel.Location = new System.Drawing.Point(75, 216);
             this.employeeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.employeeLabel.Name = "employeeLabel";
             this.employeeLabel.Size = new System.Drawing.Size(160, 24);
             this.employeeLabel.TabIndex = 17;
             this.employeeLabel.Text = "Лице за контакт:";
             // 
+            // outStocksForDelivorButton
+            // 
+            this.outStocksForDelivorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outStocksForDelivorButton.Location = new System.Drawing.Point(110, 353);
+            this.outStocksForDelivorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.outStocksForDelivorButton.Name = "outStocksForDelivorButton";
+            this.outStocksForDelivorButton.Size = new System.Drawing.Size(301, 40);
+            this.outStocksForDelivorButton.TabIndex = 19;
+            this.outStocksForDelivorButton.Text = "Доставени стоки за доставчик";
+            this.outStocksForDelivorButton.UseVisualStyleBackColor = true;
+            this.outStocksForDelivorButton.Click += new System.EventHandler(this.outStocksForDelivorButton_Click);
+            // 
             // Delivors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 353);
+            this.ClientSize = new System.Drawing.Size(493, 410);
+            this.Controls.Add(this.outStocksForDelivorButton);
             this.Controls.Add(this.employeeField);
             this.Controls.Add(this.employeeLabel);
             this.Controls.Add(this.addressField);
@@ -164,5 +178,6 @@ namespace Deliveries
         private System.Windows.Forms.Label addressLabel;
         private System.Windows.Forms.TextBox employeeField;
         private System.Windows.Forms.Label employeeLabel;
+        private System.Windows.Forms.Button outStocksForDelivorButton;
     }
 }

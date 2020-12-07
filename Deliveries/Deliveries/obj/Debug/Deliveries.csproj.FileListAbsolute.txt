@@ -28,3 +28,4 @@ C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\D
 C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.exe
 C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.pdb
 C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.Deliveries.resources
+C:\Users\Slavyan\Desktop\dostavkiREPO\dostavki\Deliveries\Deliveries\obj\Debug\Deliveries.ShowDeliveredStocks.resources

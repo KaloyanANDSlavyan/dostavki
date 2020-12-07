@@ -31,5 +31,11 @@ namespace Deliveries
 
             dbAccess.insertDelivor(delivor);
         }
+
+        private void outStocksForDelivorButton_Click(object sender, EventArgs e)
+        {
+            ShowDeliveredStocks showDeliveredStocks = new ShowDeliveredStocks();
+            showDeliveredStocks.Show();
+        }
     }
 }

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Data;
+
 
 namespace Deliveries
 {
@@ -75,6 +77,19 @@ namespace Deliveries
             {
                 MessageBox.Show("Нещо са прееба брат");
             }
+        }
+        public object outputDelivor(int id)
+        {
+            String query = @"SELECT Deliveries.delivorID, Deliveries.stockID, Stocks.stockName, 
+            Stocks.price * 1.2 AS price, CONCAT(Deliveries.deliveryAmount, ' ', Stocks.measure)
+            AS amount FROM((Deliveries INNER JOIN Delivors ON Deliveries.delivorID = Delivors.delivorID)
+            INNER JOIN Stocks ON Deliveries.stockID = Stocks.stockID) WHERE Delivors.delivorID = " + id;
+
+            command = new SqlCommand(query, connection);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            dataAdapter.Fill(dt);
+            return dt;
         }
     }
 }
