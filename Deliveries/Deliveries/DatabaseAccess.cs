@@ -13,7 +13,8 @@ namespace Deliveries
 {
     class DatabaseAccess
     {
-        private String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\MKN\Desktop\C#\clones\clone 3\dostavki\Deliveries\Deliveries\Database1.mdf;Integrated Security=True";
+        
+        private String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Slavyan\Desktop\dostavkiREPO2\dostavki\Deliveries\Deliveries\Database1.mdf;Integrated Security=True";
         private SqlConnection connection;
         private SqlCommand command;
 
@@ -22,7 +23,7 @@ namespace Deliveries
         }
 
         public void insertStock(Stock stock) {
-            String query = "insert into Stocks values('" + stock.Name + "','" + stock.Date.ToString() + "','"
+            String query = "insert into Stocks values(N'" + stock.Name + "','" + stock.Date.ToString() + "','"
                 + stock.Durability.ToString() + "','" + stock.Price.ToString() + "','" + stock.Measure + "')";
             command = new SqlCommand(query, connection);
 
@@ -41,8 +42,8 @@ namespace Deliveries
 
         public void insertDelivor(Delivor delivor)
         {
-            String query = "insert into Delivors values('" + delivor.CompanyName + "','" + delivor.Address + "','"
-         + delivor.PhoneNumber + "','" + delivor.EmployeeContact + "')";
+            String query = "insert into Delivors values(N'" + delivor.CompanyName + "',N'" + delivor.Address + "','"
+         + delivor.PhoneNumber + "',N'" + delivor.EmployeeContact + "')";
             command = new SqlCommand(query, connection);
 
             try

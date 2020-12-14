@@ -29,6 +29,7 @@ namespace Deliveries
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.stockIDField = new System.Windows.Forms.TextBox();
             this.stockIDLabel = new System.Windows.Forms.Label();
             this.delivorIDField = new System.Windows.Forms.TextBox();
@@ -40,6 +41,8 @@ namespace Deliveries
             this.deliveryAmountLabel = new System.Windows.Forms.Label();
             this.deliveryAmountField = new System.Windows.Forms.TextBox();
             this.deliveryAddButton = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // stockIDField
@@ -104,9 +107,15 @@ namespace Deliveries
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.dateTimePicker1.CustomFormat = "dd.MM.yyyy";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(322, 236);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(165, 29);
             this.dateTimePicker1.TabIndex = 12;
             // 
             // dateLabel
@@ -139,6 +148,7 @@ namespace Deliveries
             this.deliveryAmountField.Name = "deliveryAmountField";
             this.deliveryAmountField.Size = new System.Drawing.Size(165, 29);
             this.deliveryAmountField.TabIndex = 15;
+            this.deliveryAmountField.Validating += new System.ComponentModel.CancelEventHandler(this.amount_Validating);
             // 
             // deliveryAddButton
             // 
@@ -151,6 +161,10 @@ namespace Deliveries
             this.deliveryAddButton.Text = "Добави запис";
             this.deliveryAddButton.UseVisualStyleBackColor = true;
             this.deliveryAddButton.Click += new System.EventHandler(this.deliveryAddButton_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Deliveries
             // 
@@ -170,6 +184,7 @@ namespace Deliveries
             this.Controls.Add(this.stockIDLabel);
             this.Name = "Deliveries";
             this.Text = "Deliveries";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +203,6 @@ namespace Deliveries
         private System.Windows.Forms.Label deliveryAmountLabel;
         private System.Windows.Forms.TextBox deliveryAmountField;
         private System.Windows.Forms.Button deliveryAddButton;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
