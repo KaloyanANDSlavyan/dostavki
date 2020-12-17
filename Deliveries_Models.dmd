@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Deliveries_Models" id="9E576E60-07EA-92D1-D5B6-678152271491" version="3.5">
+<createdBy>MKN</createdBy>
+<createdTime>2020-12-16 18:52:33 UTC</createdTime>
+<ownerDesignName>Deliveries_Models</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9E576E60-07EA-92D1-D5B6-678152271491</designId>
+</OSDM_Design>
